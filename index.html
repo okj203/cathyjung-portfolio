@@ -1,0 +1,733 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- SEO (Search Engine Optimization) -->
+    <title>Cathy&#39;s Portfolio</title>
+    <meta
+      name="description"
+      content="Curriculum developer and technical writer, Cathy Ock Kyung Jung's portfolio site"
+    />
+    <meta name="author" content="Cathy Ock Kyung Jung" />
+    <link
+      rel="shortcut icon"
+      href="./images/favicon-32x32.png"
+      type="image/png"
+    />
+    <!-- OG (Open Graph Data) -->
+    <meta property="og:title" content="Cathy's Portfolio" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="URL Placeholder" />
+    <meta property="og:image" content="Image URL Placeholder" />
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Font Awesome -->
+    <script
+      src="https://kit.fontawesome.com/ee0bba5d35.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- TypeItJs -->
+    <script src="https://unpkg.com/typeit@8.7.1/dist/index.umd.js"></script>
+    <!-- CSS -->
+    <link rel="stylesheet" href="./css/style.css" />
+    <!-- JavaScript -->
+    <script type="module" src="./src/main.js" defer></script>
+    <script type="module" src="./src/projects.js" defer></script>
+    <script type="module" src="./src/active_menu.js" defer></script>
+    <script type="module" src="./src/type.js" defer></script>
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="header">
+      <div class="header__logo">
+        <img
+          class="header__logo__img"
+          src="./images/favicon-32x32.png"
+          alt="logo"
+        />
+        <h1 class="header__logo__title"><a href="#">Cathy Jung</a></h1>
+      </div>
+      <nav class="header__nav">
+        <ul class="header__menu">
+          <li><a class="header__menu__item active" href="#home">Home</a></li>
+          <li><a class="header__menu__item" href="#about">About</a></li>
+          <li><a class="header__menu__item" href="#skills">Skills</a></li>
+          <li><a class="header__menu__item" href="#works">Works</a></li>
+          <li>
+            <a class="header__menu__item" href="#testimonials">Testimonials</a>
+          </li>
+          <li><a class="header__menu__item" href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+      <button class="header__toggle" aria-label="nagivation menu toggle">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+    </header>
+    <!-- Main -->
+    <main>
+      <!-- Home -->
+      <section id="home">
+        <div class="home__container">
+          <img
+            class="home__avatar"
+            src="./images/profile-no-bg.png"
+            alt="Cathy's Profile"
+          />
+          <h2 class="home__title">
+            Hi, I&#39;m Cathy.<br />
+            I'm a <strong class="home__title--strong">technical writer</strong>.
+          </h2>
+          <p class="home__description">
+            Technical writer and curriculum developer based in NY, U.S.
+          </p>
+          <a class="home__contact" href="#contact">Contact Me</a>
+        </div>
+      </section>
+      <!-- About -->
+      <section id="about" class="section max-container">
+        <h2 class="title">About Me</h2>
+        <p class="description">
+          I'm a technical writer and curriculum developer with hands-on
+          experience in the blockchain and software space. I work with Daml,
+          JavaScript, TypeScript, React, HTML, and CSS.
+        </p>
+        <ul class="majors">
+          <li class="major">
+            <i class="fa-solid fa-file-lines major__icon"></i>
+            <p class="major__title">Technical Writer</p>
+            <p>Developer-focused documentation with clarity and precision</p>
+          </li>
+          <li class="major">
+            <i class="fa-solid fa-graduation-cap major__icon"></i>
+            <p class="major__title">Curriculum Developer</p>
+            <p>
+              Practical, hands-on learning experiences for diverse audiences
+            </p>
+          </li>
+          <li class="major">
+            <i class="fa-solid fa-laptop-code major__icon"></i>
+            <p class="major__title">Software Developer</p>
+            <p>
+              Full-stack and smart contract development using Daml, JavaScript,
+              TypeScript, React, NodeJS, and more
+            </p>
+          </li>
+        </ul>
+        <ul class="jobs">
+          <li class="job">
+            <img
+              class="job__img"
+              src="./images/jobs/logo-da.png"
+              alt="Digital Asset Holdings logo"
+            />
+            <div>
+              <p class="job__title">
+                Digital Asset Holdings | Technical Writer & Curriculum Developer
+              </p>
+              <p class="job__period">Jan 2023 - Present</p>
+            </div>
+          </li>
+          <li class="job">
+            <img
+              class="job__img"
+              src="./images/jobs/logo-aa.png"
+              alt="App Academy logo"
+            />
+            <div>
+              <p class="job__title">
+                App Academy | Software Engineering Instructor
+              </p>
+              <p class="job__period">Oct 2020 - Apr 2022</p>
+            </div>
+          </li>
+          <li class="job">
+            <img
+              class="job__img"
+              src="./images/jobs/logo-bd.png"
+              alt="App Academy logo"
+            />
+            <div>
+              <p class="job__title">ByteDance | Currirulum Developer</p>
+              <p class="job__period">Nov 2017 - Oct 2018</p>
+            </div>
+          </li>
+        </ul>
+      </section>
+      <!-- Skills -->
+      <section id="skills" class="section">
+        <div class="max-container">
+          <h2 class="title">My Skills</h2>
+          <p class="description">Skills & Attributes</p>
+          <p>
+            I prioritize clarity and conciseness in technical writing, with
+            experience in creating developer-centered documentation, including
+            API docs and code samples for technologies like Daml. In curriculum
+            development, I've designed learning paths tailored to various types
+            of learners, creating hands-on courses and assessment tools,
+            particularly for Daml, JavaScript, React, Ruby, and Ruby on Rails.
+            Additionally, I have experience in full-stack and smart contract
+            development, having worked on projects using MERN stack, React,
+            Daml, etc.
+          </p>
+          <div class="skills">
+            <section class="skills__prof">
+              <h3 class="skills__title">Technical Skills</h3>
+              <ul>
+                <l1 class="bar">
+                  <div class="bar__metadata">
+                    <span>Technical Writing & Editing</span>
+                    <span>95%</span>
+                  </div>
+                  <div class="bar__bg">
+                    <div class="bar__value" style="width: 95%"></div>
+                  </div>
+                </l1>
+                <l1 class="bar">
+                  <div class="bar__metadata">
+                    <span>Technical Communication</span>
+                    <span>98%</span>
+                  </div>
+                  <div class="bar__bg">
+                    <div class="bar__value" style="width: 98%"></div>
+                  </div>
+                </l1>
+                <l1 class="bar">
+                  <div class="bar__metadata">
+                    <span
+                      >Instructional Design (ADDIE, Bloom's Taxonomy,
+                      etc.)</span
+                    >
+                    <span>98%</span>
+                  </div>
+                  <div class="bar__bg">
+                    <div class="bar__value" style="width: 98%"></div>
+                  </div>
+                </l1>
+                <l1 class="bar">
+                  <div class="bar__metadata">
+                    <span>Daml</span>
+                    <span>85%</span>
+                  </div>
+                  <div class="bar__bg">
+                    <div class="bar__value" style="width: 85%"></div>
+                  </div>
+                </l1>
+                <l1 class="bar">
+                  <div class="bar__metadata">
+                    <span>JavaScript & TypeScript</span>
+                    <span>75%</span>
+                  </div>
+                  <div class="bar__bg">
+                    <div class="bar__value" style="width: 75%"></div>
+                  </div>
+                </l1>
+                <l1 class="bar">
+                  <div class="bar__metadata">
+                    <span>React</span>
+                    <span>70%</span>
+                  </div>
+                  <div class="bar__bg">
+                    <div class="bar__value" style="width: 70%"></div>
+                  </div>
+                </l1>
+                <l1 class="bar">
+                  <div class="bar__metadata">
+                    <span>HTML & CSS</span>
+                    <span>90%</span>
+                  </div>
+                  <div class="bar__bg">
+                    <div class="bar__value" style="width: 90%"></div>
+                  </div>
+                </l1>
+              </ul>
+            </section>
+            <section class="skills__tools">
+              <h3 class="skills__title">Tools</h3>
+              <ul>
+                <li>Git</li>
+                <li>Visual Studio Code</li>
+                <li>TLMS (Learning Management System)</li>
+                <li>
+                  AI Voiceover and Video Editing Tools:<br />WellSaid, Descript,
+                  etc.
+                </li>
+              </ul>
+            </section>
+            <section class="skills__etc">
+              <h3 class="skills__title">Etc.</h3>
+              <ul>
+                <li>Sphinx, reStructuredText</li>
+                <li>Ruby on Rails</li>
+                <li>NodeJS</li>
+                <li>SQL</li>
+                <li>MongoDB</li>
+                <li>
+                  Foreign Languages:<br />English, Korean, Mandarin, Japanese
+                </li>
+              </ul>
+            </section>
+          </div>
+        </div>
+      </section>
+      <!-- Works -->
+      <section id="works" class="section">
+        <div class="max-container">
+          <h2 class="title">My Works</h2>
+          <p class="description">Projects</p>
+          <ul class="categories">
+            <li>
+              <button class="category category--selected" data-category="all">
+                All <span class="category__count">14</span>
+              </button>
+            </li>
+            <li>
+              <button class="category" data-category="tech-writing">
+                Technical Writing <span class="category__count">2</span>
+              </button>
+            </li>
+            <li>
+              <button class="category" data-category="curr-dev">
+                Curriculum Development <span class="category__count">5</span>
+              </button>
+            </li>
+            <li>
+              <button class="category" data-category="swd">
+                Software Development <span class="category__count">7</span>
+              </button>
+            </li>
+          </ul>
+          <ul class="projects">
+            <li class="project" data-type="tech-writing">
+              <a
+                href="https://github.com/okj203/react-youtube-clone?tab=readme-ov-file#react-youtube-clone"
+                target="_blank"
+              >
+                <img
+                  class="project__img"
+                  src="./images/projects/tech-writing-2.webp"
+                  alt="README: YouTube Clone Technical Documentation"
+                />
+                <div class="project__metadata">
+                  <h3 class="project__title">
+                    README: YouTube Clone Technical Documentation
+                  </h3>
+                  <p>
+                    Authored a detailed README outlining the project setup,
+                    features, and technical architecture, demonstrating clear
+                    communication of complex technical concepts.
+                  </p>
+                </div>
+              </a>
+            </li>
+            <li class="project" data-type="swd">
+              <a
+                href="https://okj203-react-youtube-clone.netlify.app/"
+                target="_blank"
+              >
+                <img
+                  class="project__img"
+                  src="./images/projects/swe-7.webp"
+                  alt="Live Demo: YouTube Clone"
+                />
+                <div class="project__metadata">
+                  <h3 class="project__title">Live Demo: YouTube Clone</h3>
+                  <p>
+                    Built a fully functional front-end YouTube clone built with
+                    React. Features include video search, playback, dynamic and
+                    customizable UI elements, fetch optimization, and more.
+                  </p>
+                </div>
+              </a>
+            </li>
+            <li class="project" data-type="tech-writing">
+              <a
+                href="https://github.com/digital-asset/docs.daml.com/tree/main/docs/3.1/docs/tsa-arch"
+                target="_blank"
+              >
+                <img
+                  class="project__img"
+                  src="./images/projects/tech-writing-1.webp"
+                  alt="Technical documents for technical solution architects"
+                />
+                <div class="project__metadata">
+                  <h3 class="project__title">
+                    Official Daml Technical Architecture Documentation
+                  </h3>
+                  <p>
+                    Authored multiple official Daml documents providing
+                    technical overviews and guidance on designing and building
+                    robust Daml application architectures.
+                  </p>
+                </div>
+              </a>
+            </li>
+            <li class="project" data-type="swd">
+              <a
+                href="https://github.com/digital-asset/tlms-cd-code-demo/tree/main/daml-fundamentals/certification-sample-capstone"
+                target="_blank"
+              >
+                <img
+                  class="project__img"
+                  src="./images/projects/swe-1.webp"
+                  alt="Sample Daml capstone project and rubric"
+                />
+                <div class="project__metadata">
+                  <h3 class="project__title">
+                    Sample Daml Capstone Project & Rubric
+                  </h3>
+                  <p>
+                    Implemented a project-oriented certification process for
+                    Daml, a Haskell-based smart contract language, introducing a
+                    standardized rubric for evaluating capstone projects.
+                  </p>
+                </div>
+              </a>
+            </li>
+            <li class="project" data-type="curr-dev">
+              <a
+                href="https://daml.talentlms.com/catalog/info/id:141"
+                target="_blank"
+              >
+                <img
+                  class="project__img"
+                  src="./images/projects/curr-dev-1.webp"
+                  alt="Daml Fundamentals"
+                />
+                <div class="project__metadata">
+                  <h3 class="project__title">Daml Fundamentals</h3>
+                  <p>
+                    Authored the quizzes for the Course 1. The certification
+                    path prepares a developer to build a simple Daml application
+                    by learning the basics of Daml programming and testing.
+                  </p>
+                </div>
+              </a>
+            </li>
+            <li class="project" data-type="curr-dev">
+              <a
+                href="https://daml.talentlms.com/catalog/info/id:150"
+                target="_blank"
+              >
+                <img
+                  class="project__img"
+                  src="./images/projects/curr-dev-2.webp"
+                  alt="Contract Developer Course 1"
+                />
+                <div class="project__metadata">
+                  <h3 class="project__title">Contract Developer Course 1</h3>
+                  <p>
+                    Authored lessons and quizzes for Course 1 in the Contract
+                    Developer certification path. The course helps experienced
+                    developers efficiently review the fundamentals of functional
+                    programming in Daml.
+                  </p>
+                </div>
+              </a>
+            </li>
+            <li class="project" data-type="curr-dev">
+              <a
+                href="https://daml.talentlms.com/catalog/info/id:151"
+                target="_blank"
+              >
+                <img
+                  class="project__img"
+                  src="./images/projects/curr-dev-3.webp"
+                  alt="Contract Developer Course 2"
+                />
+                <div class="project__metadata">
+                  <h3 class="project__title">Contract Developer Course 2</h3>
+                  <p>
+                    Authored lessons and quizzes for Course 2 in the Contract
+                    Developer certification path. The course trains experienced
+                    developers to design Daml applications and translate
+                    business logic into Daml code.
+                  </p>
+                </div>
+              </a>
+            </li>
+            <li class="project" data-type="curr-dev">
+              <a
+                href="https://daml.talentlms.com/catalog/info/id:145"
+                target="_blank"
+              >
+                <img
+                  class="project__img"
+                  src="./images/projects/curr-dev-4.webp"
+                  alt="Daml Fundamentals Certification Exam"
+                />
+                <div class="project__metadata">
+                  <h3 class="project__title">
+                    Daml Fundamentals Certification Exam
+                  </h3>
+                  <p>
+                    Authored 55 exam questions for the Daml Fundamentals
+                    certification: 30 aligned with course categories, and 25
+                    hands-on questions simulating real-world Daml development.
+                  </p>
+                </div>
+              </a>
+            </li>
+            <li class="project" data-type="curr-dev">
+              <a
+                href="https://daml.talentlms.com/catalog/info/id:158"
+                target="_blank"
+              >
+                <img
+                  class="project__img"
+                  src="./images/projects/curr-dev-5.webp"
+                  alt="Contract Developer Certification Exam"
+                />
+                <div class="project__metadata">
+                  <h3 class="project__title">
+                    Contract Developer Certification Exam
+                  </h3>
+                  <p>
+                    Authored 40 out of 70 technical questions to assess
+                    candidates’ understanding of the first two courses in the
+                    Contract Developer path (“Advanced Fundamentals” and
+                    “Authorization and Privacy”).
+                  </p>
+                </div>
+              </a>
+            </li>
+            <li class="project" data-type="swd">
+              <a
+                href="https://github.com/digital-asset-archive/wallet-sample-app-digital-asset"
+                target="_blank"
+              >
+                <img
+                  class="project__img"
+                  src="./images/projects/swe-2.webp"
+                  alt="Wallet Application"
+                />
+                <div class="project__metadata">
+                  <h3 class="project__title">
+                    Live Lecture: Daml UTXO Wallet Application
+                  </h3>
+                  <p>
+                    Delivered a live-coding lecture on refactoring the Daml code
+                    from an Account-Balance model to a UTXO-based model.
+                  </p>
+                </div>
+              </a>
+            </li>
+            <li class="project" data-type="swd">
+              <a
+                href="https://github.com/digital-asset/tlms-cd-code-demo"
+                target="_blank"
+              >
+                <img
+                  class="project__img"
+                  src="./images/projects/swe-3.webp"
+                  alt="Certification Program Code Demonstration Repository"
+                />
+                <div class="project__metadata">
+                  <h3 class="project__title">
+                    Certification Program Code Demonstration Repository
+                  </h3>
+                  <p>
+                    Created and managed the repository to collect and organize
+                    code demos used in lessons throughout all official
+                    certification programs.
+                  </p>
+                </div>
+              </a>
+            </li>
+            <li class="project" data-type="swd">
+              <a href="https://github.com/okj203/MERN-CAMP" target="_blank">
+                <img
+                  class="project__img"
+                  src="./images/projects/swe-4.webp"
+                  alt="CAMP, a full-stack application built with the MERN stack."
+                />
+                <div class="project__metadata">
+                  <h3 class="project__title">CAMP</h3>
+                  <p>
+                    Collaborated with other engineers as a team to build a
+                    full-stack application using the MERN stack. Proposed the
+                    project idea and served as a flex developer, contributing to
+                    both the frontend and backend.
+                  </p>
+                </div>
+              </a>
+            </li>
+            <li class="project" data-type="swd">
+              <a href="https://github.com/okj203/AerBnB/wiki" target="_blank">
+                <img
+                  class="project__img"
+                  src="./images/projects/swe-5.webp"
+                  alt="AerBnB, a full-stack clone project built with Ruby on Rails and React."
+                />
+                <div class="project__metadata">
+                  <h3 class="project__title">AerBnB</h3>
+                  <p>
+                    Developed a full-stack clone project with Ruby on Rails and
+                    React, implementing complete authentication (signup, login,
+                    logout) entirely from scratch without third-party services
+                    or libraries.
+                  </p>
+                </div>
+              </a>
+            </li>
+            <li class="project" data-type="swd">
+              <a href="https://okj203.github.io/JSPaintCanvas/" target="_blank">
+                <img
+                  class="project__img"
+                  src="./images/projects/swe-6.webp"
+                  alt="JSPaintCanvas, a canvas application built with vanilla JavaScript."
+                />
+                <div class="project__metadata">
+                  <h3 class="project__title">JSPaintCanvas</h3>
+                  <p>
+                    Built a front-end canvas app using only vanilla JavaScript
+                    (no frameworks or libraries), allowing users to customize
+                    canvas size, brush settings, colors, and download their
+                    drawings.
+                  </p>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <!-- Testimonials -->
+      <section id="testimonials" class="section max-container">
+        <h2 class="title">Testimonials</h2>
+        <p class="description">See what people say about me.</p>
+        <ul class="testimonials">
+          <li class="testimonial">
+            <img
+              class="testimonial__img"
+              src="images/testimonials/people1.webp"
+              alt="people1"
+            />
+            <div class="testimonial__bubble">
+              <p class="testimonial__bubble__message">
+                "Cathy was my project manager at the app Academy when I worked
+                on a full stack clone of Rate My Professors. She was hands down
+                the best project manager I have had so far for several reasons.
+                Firstly, if I had any bug / issue with my code, she was always
+                there to not only squash the bug for me, but to teach me about
+                why the bug arrived in the first place, and how to prevent those
+                types of bugs in the future consistently giving me a deeper
+                understanding of the concepts involved.
+                <br />
+                <br />
+                Secondly, she did not micromanage me. She miraculously found the
+                balance between giving the perfect amount of distance when I
+                needed to figure it out by myself, but being right by my side
+                when I needed her support. Her skill and knowledge in her craft
+                is incredibly vast and that was evident each time we met to
+                discuss my project. She kept an open mind about my strategies
+                and design choices and, rather than forcing me to pivot, would
+                work with me and guide me to where I needed to be for the best
+                results. I feel very lucky to have been reporting directly to
+                Cathy!"
+              </p>
+              <p>
+                <a
+                  class="testimonial__bubble__name"
+                  href="https://www.linkedin.com/in/cathy-ock-kyung-jung-18a66296/details/recommendations/"
+                  target="_blank"
+                  >Neil</a
+                >
+                / Narmi
+              </p>
+            </div>
+          </li>
+          <li class="testimonial">
+            <img
+              class="testimonial__img"
+              src="images/testimonials/people2.webp"
+              alt="people2"
+            />
+            <div class="testimonial__bubble">
+              <p class="testimonial__bubble__message">
+                "It was such a pleasure attending App Academy with Cathy. She
+                was always welcoming, helpful, and motivated. We worked together
+                on our CAMP web application, and through much of our studies at
+                a/A. She is creative, intelligent, and always lends a helping
+                hand. An excellent colleague!"
+              </p>
+              <p>
+                <a
+                  class="testimonial__bubble__name"
+                  href="https://www.linkedin.com/in/cathy-ock-kyung-jung-18a66296/details/recommendations/"
+                  target="_blank"
+                  >Mac</a
+                >
+                / Bloomberg LP
+              </p>
+            </div>
+          </li>
+          <li class="testimonial">
+            <img
+              class="testimonial__img"
+              src="images/testimonials/people3.webp"
+              alt="person3"
+            />
+            <div class="testimonial__bubble">
+              <p class="testimonial__bubble__message">
+                "You never gave up on me, always found new ways to help me
+                learn, and made even the toughest concepts click. I wouldn’t be
+                here without your patience, creativity, and support. Thank you
+                so much, Cathy!"
+              </p>
+              <p>
+                <a
+                  class="testimonial__bubble__name"
+                  href="https://www.linkedin.com/feed/update/urn:li:activity:7306695845238755329?commentUrn=urn%3Ali%3Acomment%3A%28activity%3A7306695845238755329%2C7306708141168119808%29&dashCommentUrn=urn%3Ali%3Afsd_comment%3A%287306708141168119808%2Curn%3Ali%3Aactivity%3A7306695845238755329%29"
+                  target="_blank"
+                  >Matt</a
+                >
+                / n2y LLC
+              </p>
+            </div>
+          </li>
+        </ul>
+      </section>
+      <!-- Arrow Up -->
+      <aside>
+        <a class="arrow-up" href="#home" title="back to top">
+          <i class="fa-solid fa-arrow-up"></i>
+        </a>
+      </aside>
+    </main>
+    <!-- Footer -->
+    <footer id="contact" class="section">
+      <div class="max-container">
+        <h2 class="title">Let&#39;s chat!</h2>
+        <p class="description">okj203@gmail.com</p>
+        <ul class="contact__links">
+          <li>
+            <a
+              class="contact__link"
+              href="https://www.linkedin.com/in/cathy-ock-kyung-jung-18a66296/"
+              target="_blank"
+              title="Link to my LinkedIn"
+            >
+              <i class="fa-brands fa-linkedin"></i>
+            </a>
+          </li>
+          <li>
+            <a
+              class="contact__link"
+              href="https://github.com/okj203"
+              target="_blank"
+              title="Link to my GitHub"
+            >
+              <i class="fa-brands fa-github"></i>
+            </a>
+          </li>
+        </ul>
+        <p>© Ock Kyung (Cathy) Jung - All rights reserved.</p>
+      </div>
+    </footer>
+  </body>
+</html>
