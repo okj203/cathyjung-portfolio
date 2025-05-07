@@ -615,6 +615,13 @@ button:focus {
     font-size: 2.5rem;
     margin-bottom: 0.5rem;
   }
+  
+  .home__title--strong__container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 10rem;
+  }
 
   .majors {
     flex-direction: column;

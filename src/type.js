@@ -3,13 +3,14 @@
 new TypeIt('.home__title--strong', {
     loop: true,
     speed: 100,
-}) 
+})
+.type('Technical Writer')  
 .pause(1000)
 .delete()
-.type('curriculum developer') 
+.type('Curriculum Developer') 
 .pause(1000)
 .delete()
-.type('software development L&D expert')
+.type('Software Development Enablement Expert')
 .pause(1000)
 .delete()
 .go();
